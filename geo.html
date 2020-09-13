@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather </title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/geo.css">
+		<script src="https://kit.fontawesome.com/94776d0c59.js" crossorigin="anonymous"></script>
+
+</head>
+<body id="app">
+
+<h1 style="text-align: center;color: white;">Weather</h1>
+<div id="mobile">Extra details</div>
+<div id="extra"><div><p style="font-size: 1.5rem;">Feels like</p>
+        <p id="feel" class="feeel">18 <span style="font-size: 1.5rem;">C</span></p></div>
+
+        <div><p style="font-size: 1.5rem;">Min/Max</p><p id="minmax" class="feeel"> 5 / 20 <span style="font-size: 1.5rem;">C</span></p></div>
+          <div><p style="font-size: 1.5rem;">Humidity</p><p id="humid" class="feeel"> 75 <span style="font-size: 1.5rem;">%</span></p></div>
+          <div><p style="font-size: 1.5rem;">Pressure</p><p id="press" class="feeel">750<span style="font-size: 1rem;">mm HG</span></p></div>
+</div>
+
+<div id="container">
+<p id="city">London</p>
+<div id="icon"><i class="far fa-sun"></i></div>
+<p id="temp">15 <span style="font-size: 2rem;">C</span></p>
+<p id="wn">Sunny</p>
+</div>
+
+
+
+<br><br><br>
+<button id="loc" >Grant Access to your current location</button>
+
+<br><br><br>
+<form>
+<label>City name-: </label>
+<input type="text" name="cityname" id="cityname" placeholder="Enter your city name" >
+<br><br><br>
+<input type="submit" name="submit" id="subb" >
+</form>
+<script type="text/javascript" src="js/geo.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
