@@ -92,7 +92,7 @@ if(data.weather[0].main=='Thunderstorm'){
 	$('#icon').append('<i class="fas fa-bolt"></i>');
 body.style.backgroundImage="url('https://myradar.com/static/background-553feb780990ed5e9c8b39945e414602.jpg')";
 }
-if(data.weather[0].main=='Sunny'){
+if(data.weather[0].main=='Sunny'||data.weather[0].main=='Clear'){
 	$('#icon').append('<i class="far fa-sun"></i>');
 body.style.backgroundImage="url('https://www.travelalerts.ca/wp-content/uploads/2016/08/sunny_vacationspots.jpg')";
 }
@@ -100,6 +100,7 @@ if(data.weather[0].main=='Clouds'){
 	$('#icon').append('<i class="fas fa-cloud-sun"></i>');
 body.style.backgroundImage="url('https://www.farmersalmanac.com/wp-content/uploads/2011/09/Clouds-Predict-Local-Weather-i861387936.jpg')";
 }
+	
 	});
 
 }
